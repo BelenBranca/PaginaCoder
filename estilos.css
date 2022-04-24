@@ -37,6 +37,18 @@ header a:hover{
 h1{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
+    animation-name: colorear;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes colorear {
+    0%{color: #ecc9dd;}
+    15%{color: #b5b5b5;}
+    30%{color: #8c8c8c;}
+    45%{color: #666666;}
+    60%{color: #515151;}
+    80%{color: #3c3c3c;}
+    100%{color: black;}
 }
 .barra{
     word-spacing: 10px;
