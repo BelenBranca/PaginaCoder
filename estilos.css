@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.divContainer{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "portada"
+        "arriba"
+        "abajo"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 85vh 100vh 100vh 200px;
+    grid-column-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+}
+header{
+    grid-area: header;
+    background-color: #ecc9dd ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header a:hover{
+    color: grey;
+    text-decoration: none; /* Evita que se subraye el menú al pasar el mouse por encima */
+}
+.logo{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    animation-name: colorear;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes colorear {
+    0%{color: #ecc9dd;}
+    15%{color: #b5b5b5;}
+    30%{color: #8c8c8c;}
+    45%{color: #666666;}
+    60%{color: #515151;}
+    80%{color: #3c3c3c;}
+    100%{color: black;}
+}
+.barra{
+    word-spacing: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.botonesMenuInicio{
+    display: inline;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: black; /* Por que no me toma el color?  */
+}
+.portada{
+    grid-area: portada;
+    background-color: white;
+    background-image: url(imagenes/fotoinicioo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.arriba{
+    grid-area: arriba;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.area1{
+    text-align: center;
+    width: 50%;
+    margin: 60px;
+    margin-top: 300px;
+}
+.area2{
+    height: 100vh;
+    width: 40%;
+    background-image: url(imagenes/HaileyBieber.jpg);
+    background-size: cover;
+    background-position: center;  
+}
+.abajo{
+    grid-area: abajo;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.area3{
+    text-align: center;
+    width: 50%;
+    margin: 60px;
+    margin-top: 300px;
+}
+.area4{
+    height: 100vh;
+    width: 40%;
+    background-image: url(imagenes/prada.jpg);
+    background-size: cover;
+    background-position: center;  
+}
+footer{
+    grid-area: footer;
+    background-color: #ecc9dd;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0px;
+}
+footer a:hover{
+    color: grey;
+    text-decoration: none; /* Evita que se subraye el menú al pasar el mouse por encima */
+}
+#footerIndex{
+    margin-top: 50px;
+}
+h5{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;  
+    margin-top: 30px;
+}
+.contacto{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+    letter-spacing: 3px;
+    text-align: center;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+h4{
+    font-family: 'Anybody', cursive;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+.divContainerNews{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas: 
+        "header header"
+        "noticia1 fotoNoticia1"
+        "textoNoticia1 fotoNoticia1"
+        "fotoNoticia2 noticia2"
+        "fotoNoticia2 textoNoticia2"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh 25vh 75vh 25vh 75vh 150px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.noticia1{
+    grid-area: noticia1;
+    width: 100%;
+    background-color: #ecc9dd;
+    text-align: center;
+    padding-top: 50px;
+}
+.textoNoticia1{
+    grid-area: textoNoticia1;
+    width: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 40px;
+}
+.fotoNoticia1{
+    grid-area: fotoNoticia1;
+    width: 100%;
+    background-image: url(../imagenes/Emily.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.noticia2{
+    grid-area: noticia2;
+    width: 100%;
+    background-color: #ecc9dd;
+    text-align: center;
+    padding-top: 30px;
+}
+.textoNoticia2{
+    grid-area: textoNoticia2;
+    width: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+.fotoNoticia2{
+    grid-area: fotoNoticia2;
+    width: 100%;
+    background-image: url(../imagenes/zara.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.divContainerNews p{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+.divContainerFashion{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "encabezado"
+        "fotoPrincipal"
+        "texto"
+        "galeria"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 15vh 70vh 150px auto 150px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.encabezado{
+    grid-area: encabezado;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.fotoPrincipal{
+    grid-area: fotoPrincipal;
+    background-color: white;
+    background-image: url(../imagenes/jogger.jpg);
+    background-size: contain;
+    margin: 30px;
+    width: 100%;
+}
+.texto{
+    grid-area: texto;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}   
+.galeria{
+    grid-area: galeria;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.jogger{
+    height: 700px;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+.divContainerCelebrity{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "titulo"
+        "sub1"
+        "galeria1"
+        "sub2"
+        "galeria2"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 15vh 10vh auto 10vh auto 150px;
+    grid-column-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.tituloCeleb{
+    grid-area: titulo;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 60px;
+}
+.sub1{
+    grid-area: sub1;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub1 h2{
+    font-size: 25px;
+}
+.galeria1{
+    grid-area: galeria1;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-items: initial;
+}
+.foto{
+    height: 680px;
+    transition: 1s;
+}
+.sub2{
+    grid-area: sub2;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub2 h2{
+    font-size: 25px;
+}
+.galeria2{
+    grid-area: galeria2;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-items: initial;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fondo{
+    margin: 50px;
+}
+label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+input{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width:600px){
+    .divContainer{
+        grid-template-areas: 
+            "header"
+            "arriba"
+            "abajo"
+            "footer";
+        grid-template-rows: 15vh 100vh 100vh 150px;
+    }
+    #footerIndex{
+        height: 200px;
+    }
+    header{
+        flex-direction: column;
+        background-color: #ecc9dd;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .barra{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+    .botonesMenuInicio{
+        font-size: 15px;
+    }
+    .arriba{
+        justify-content: space-evenly;
+    }
+    .abajo{
+        justify-content: space-evenly;
+    }
+    .area1{
+        margin-top: 150px;
+    }
+    .area2{
+        display: none;
+    }
+    .area3{
+        margin-top: 150px;
+    }
+    .area4{
+        display: none;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .divContainerNews{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-areas: 
+            "header"
+            "noticia1"
+            "textoNoticia1"
+            "noticia2"
+            "textoNoticia2"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 20vh 80vh 20vh 80vh 150px;
+    }
+    .fotoNoticia1{
+        display: none;
+    }
+    .fotoNoticia2{
+        display: none;
+    }
+    .textoNoticia1{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+    .textoNoticia2{
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+    .divContainerNews p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .divContainerFashion{
+        grid-template-areas: 
+            "header"
+            "encabezado"
+            "fotoPrincipal"
+            "texto"
+            "galeria"
+            "footer";
+        grid-template-rows: 15vh 10vh 50vh auto auto 150px;
+        height: 100vh;
+    }
+    .encabezado{
+        margin: 30px;
+    }
+    .texto{
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .divContainer{
+        grid-template-areas: 
+            "header"
+            "arriba"
+            "abajo"
+            "footer";
+        grid-template-rows: 15vh 100vh 100vh 150px;
+    }
+    header{
+        flex-direction: column;
+        background-color: #ecc9dd;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .barra{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+    .botonesMenuInicio{
+        font-size: 20px;
+    }
+    .arriba{
+        justify-content: space-evenly;
+    }
+    .abajo{
+        justify-content: space-evenly;
+    }
+    .area1{
+        margin-top: 150px;
+    }
+    .area2{
+        display: none;
+    }
+    .area3{
+        margin-top: 150px;
+    }
+    .area4{
+        display: none;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .divContainerNews{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-areas: 
+            "header"
+            "noticia1"
+            "textoNoticia1"
+            "noticia2"
+            "textoNoticia2"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 20vh 80vh 20vh 80vh 150px;
+    }
+    .fotoNoticia1{
+        display: none;
+    }
+    .fotoNoticia2{
+        display: none;
+    }
+    .textoNoticia1{
+        margin: 0;
+        padding: 0;
+    }
+    .textoNoticia2{
+        margin: 0;
+        padding: 0;
+    }
+    #footerIndex{
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px){
+    .divContainer{
+        grid-template-areas: 
+            "header"
+            "arriba"
+            "abajo"
+            "footer";
+        grid-template-rows: 15vh 100vh 100vh 200px;
+    }
+    header{
+        flex-direction: column;
+        background-color: #ecc9dd;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .barra{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+    .botonesMenuInicio{
+        font-size: 20px;
+    }
+    .divContainerNews{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-areas: 
+            "header"
+            "noticia1"
+            "textoNoticia1"
+            "noticia2"
+            "textoNoticia2"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 20vh 80vh 20vh 80vh 150px;
+    }
+    .fotoNoticia1{
+        display: none;
+    }
+    .fotoNoticia2{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width:1200px){
+    .divContainer{
+        grid-template-areas: 
+            "header"
+            "portada"
+            "arriba"
+            "abajo"
+            "footer";
+        grid-template-rows: 15vh 85vh 100vh 100vh 250px;
+    }
+    .divContainerNews{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-areas: 
+            "header"
+            "noticia1"
+            "textoNoticia1"
+            "noticia2"
+            "textoNoticia2"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 20vh 80vh 20vh 80vh 150px;
+    }
+    .fotoNoticia1{
+        display: none;
+    }
+    .fotoNoticia2{
+        display: none;
+    }
+    .jogger:hover{
+        height: 750px;
+        width: auto;  
+    }
+    .foto:hover{
+        height: 750px;
+        width: auto;  
+    }
+}    
+
+@media only screen and (min-width: 1200px){
+    .jogger:hover{
+        height: 800px;
+        width: auto;   
+    }
+    .foto:hover{
+        height: 750px;
+        width: auto;  
+    }
+}
