@@ -59,7 +59,7 @@ h1{
     display: inline;
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: black;    
 }
 .portada{
@@ -694,7 +694,7 @@ input{
         margin: 0;
     }
     .botonesMenuInicio{
-        font-size: 20px;
+        font-size: 18px;
     }
     .divContainerNews{
         display: grid;
