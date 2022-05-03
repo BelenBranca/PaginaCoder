@@ -25,6 +25,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
 }
 header a:hover{
     color: grey;
@@ -32,8 +33,7 @@ header a:hover{
 }
 .logo{
     float: left;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin: 30px;
 }
 h1{
     font-family: 'Dancing Script', cursive;
@@ -53,8 +53,7 @@ h1{
 }
 .barra{
     word-spacing: 10px;
-    margin-top: 50px;
-    margin-right: 20px;
+    margin: 30px;
 }
 .botonesMenuInicio{
     display: inline;
